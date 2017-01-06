@@ -1,6 +1,8 @@
-var PythonShell = require('python-shell');
+const PythonShell = require('python-shell');
 
-var pyshell = new PythonShell('../chatbot-rnn-master/chatbot.py');
+const chatbot = '../chatbot-rnn-master/chatbot.py';
+
+const pyshell = new PythonShell(chatbot);
 
 pyshell.send("");
 
@@ -16,7 +18,7 @@ pyshell.on('message', function (message) {
         if (message === "Restoring weights...") {
 
             viewReady();
-            translateEnReceive("Ready.")
+            translateEnReceive("Ready.");
             return;
         }
 

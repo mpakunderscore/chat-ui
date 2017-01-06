@@ -20,9 +20,7 @@
     "electron": "^1.4.13"
   },
   "dependencies": {
-    "@google-cloud/speech": "^0.5.0",
-    "google-cloud": "^0.45.1",
-    "google-speech": "0.0.5",
-    "google-translate": "^1.0.7"
+    "google-translate": "^1.0.7",
+    "python-shell": "^0.4.0"
   }
 }

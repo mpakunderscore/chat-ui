@@ -9,7 +9,7 @@ msg.voiceURI = 'native';
 msg.volume = 1; // 0 to 1
 msg.rate = 1; // 0.1 to 10
 msg.pitch = 1; //0 to 2
-msg.lang = 'ru-RU';
+msg.lang = 'en-En';
 
 const translateEnReceive = function (text) {
 
@@ -19,6 +19,9 @@ const translateEnReceive = function (text) {
 
     // add(text)
 
+    msg.text = text;
+    window.speechSynthesis.speak(msg);
+
     googleTranslate.translate(text, 'ru', function(err, translation) {
 
         // console.log("RU < " + translation.translatedText);
@@ -27,8 +30,8 @@ const translateEnReceive = function (text) {
 
         add(text, translation.translatedText, "")
 
-        msg.text = translation.translatedText;
-        window.speechSynthesis.speak(msg);
+        // msg.text = translation.translatedText;
+        // window.speechSynthesis.speak(msg);
     });
 }
 

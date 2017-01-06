@@ -2,3 +2,6 @@
 .idea
 node_modules
 /bower_components/
+/jarvis-3468dfd71e0d.json
+/data/
+/models/
