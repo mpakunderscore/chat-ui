@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+
+
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" type="text/css">
+
+        <link rel="stylesheet" type="text/css" href="css/view.css">
+
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>-->
+    </head>
+
+    <body>
+
+        <!--<input type="button" onclick="startRecognition();" value="Recognize text" />-->
+        <!--<input type="button" onclick="stopRecognition();" value="stop recognition" />-->
+
+        <div id="gradient"></div>
+
+        <div id="conversation"></div>
+
+        <input id="input" type="text" placeholder="Wait." x-webkit-speech>
+
+        <!-- Insert this line above script imports  -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <!-- normal script imports etc  -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/artyom.js/src/artyom.js"></script>
+
+        <script src="js/python.js"></script>
+        <script src="js/view.js"></script>
+        <script src="js/translate.js"></script>
+
+        <!--<script src="js/google.js"></script>-->
+        <!--<script src="js/speech.js"></script>-->
+
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+
+    </body>
+</html>

@@ -1,0 +1,1 @@
+translateFromRu("привет")

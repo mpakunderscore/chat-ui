@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: 300;*/
+
+    /*overflow-y: -webkit-marquee;*/
+
+    /*background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1));*/
+}
+
+#gradient {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    pointer-events: none;
+
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    /*color: red;*/
+    /*-webkit-mask-image: -webkit-gradient(linear, left top, left bottom,*/
+    /*from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));*/
+    /*background-color: red;*/
+    z-index: 2;
+}
+
+input {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+
+    padding: 20px;
+    /*padding-left: 20px;*/
+
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: 300;*/
+
+    border: 0;
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+
+    z-index: 3;
+}
+
+input:focus {
+    outline: none;
+}
+
+#conversation {
+
+    z-index: 1;
+
+    padding: 20px;
+    margin-bottom: 60px;
+    /*padding-left: 20px;*/
+}
+
+.message {
+    /*position: absolute;*/
+    /*width: 20px;*/
+    /*bottom : 0;*/
+
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid  gainsboro;
+
+    /*opacity: 0.5;*/
+}
+
+.message:hover .en{
+    opacity: 1;
+}
+
+.text {
+    /*background-color: rgba(127, 255, 212, 0.24);*/
+    margin-bottom: 5px;
+    /*color: #404040;*/
+}
+
+.en {
+    /*text-align: right;*/
+    font-size: 12px;
+    opacity: 0.3;
+    /*font-weight: 400;*/
+    /*background-color: rgba(255, 194, 139, 0.24);*/
+}
+
+.user .text {
+    color: #16aadc;
+}
