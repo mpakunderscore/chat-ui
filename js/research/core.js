@@ -1,1 +1,0 @@
-translateFromRu("привет")

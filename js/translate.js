@@ -4,7 +4,7 @@ var googleTranslate = require('google-translate')(apiKey);
 
 var msg = new SpeechSynthesisUtterance();
 var voices = window.speechSynthesis.getVoices();
-msg.voice = voices[0]; // Note: some voices don't support altering params
+msg.voice = voices[1]; // Note: some voices don't support altering params
 msg.voiceURI = 'native';
 msg.volume = 1; // 0 to 1
 msg.rate = 1; // 0.1 to 10
@@ -13,7 +13,7 @@ msg.lang = 'ru-RU';
 
 const translateEnReceive = function (text) {
 
-    console.log("EN < " + text);
+    // console.log("EN < " + text);
 
     // pyshell.send(translation.translatedText);
 
@@ -21,7 +21,7 @@ const translateEnReceive = function (text) {
 
     googleTranslate.translate(text, 'ru', function(err, translation) {
 
-        console.log("RU < " + translation.translatedText);
+        // console.log("RU < " + translation.translatedText);
 
         // add(translation.translatedText, text)
 
@@ -34,13 +34,13 @@ const translateEnReceive = function (text) {
 
 const translateRuSend = function (text) {
 
-    console.log("RU > " + text);
+    // console.log("RU > " + text);
 
     // add(text)
 
     googleTranslate.translate(text, 'en', function(err, translation) {
 
-        console.log("EN > " + translation.translatedText);
+        // console.log("EN > " + translation.translatedText);
 
         add(text, translation.translatedText, "user")
 
