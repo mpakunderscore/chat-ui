@@ -1,3 +1,5 @@
+![alt tag](https://i.imgur.com/2LjVToZ.png)
+
 Electron js view for https://github.com/pender/chatbot-rnn
 
 PUT "models/reddit" INSIDE PROJECT FOLDER
